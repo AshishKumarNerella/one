@@ -8,7 +8,7 @@
 	<h1 style="color: green; font-size: 40px;" align="center">234567890</h1>
 	<h1 style="color: pink; font-size: 40px;" align="center">WE ARE SUCCESSFULLY DEPLOYED APPLICATION</h1>
 	<h1 style="color: brown; font-size: 40px;" align="center">This is my frist ci/cd deployement in devops career</h1>
-	
+	<h1 style="color: orange; font-size: 40px;" align="center">Integreted nexus also</h1>
 	
 	
 	
