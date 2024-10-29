@@ -3,45 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>India Map</title>
+  <title>Flag of India</title>
   <style>
-    .state {
-      fill: #87CEEB; /* Light blue */
-      stroke: #000; /* Black border */
-      stroke-width: 0.5;
-      cursor: pointer;
+    /* Styling for the India flag */
+    .flag {
+      width: 300px; /* Width of the flag */
+      height: 180px; /* Height of the flag (2:3 ratio) */
+      border: 1px solid #000;
+      display: flex;
+      flex-direction: column;
     }
-    .state:hover {
-      fill: #4682B4; /* Darker blue */
+    .saffron {
+      background-color: #FF9933;
+      height: 33.33%;
+    }
+    .white {
+      background-color: #FFFFFF;
+      height: 33.33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .green {
+      background-color: #138808;
+      height: 33.33%;
+    }
+    /* Styling for the Ashoka Chakra */
+    .chakra {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #000080;
+      border-radius: 50%;
+      position: relative;
+    }
+    .chakra::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      background-color: #000080;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .chakra::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background-color: #000080;
+      transform: rotate(0deg);
+      animation: rotateChakra 1s infinite linear;
+    }
+    @keyframes rotateChakra {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
 
-  <h1>Map of India</h1>
+  <h1>Flag of India</h1>
+  <div class="flag">
+    <div class="saffron"></div>
+    <div class="white">
+      <div class="chakra"></div>
+    </div>
+    <div class="green"></div>
+  </div>
 
-  <!-- SVG Map of India -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="500" height="500">
-    <!-- Each <path> represents a state -->
-    <path d="M100,200 L200,300 L150,400 Z" class="state" data-name="Uttar Pradesh"></path>
-    <path d="M300,300 L400,400 L350,500 Z" class="state" data-name="Maharashtra"></path>
-    <!-- Add more paths for each state based on their coordinates -->
-  </svg>
-
-  <script>
-    // Tooltip effect to show state names on hover
-    document.querySelectorAll('.state').forEach((element) => {
-      element.addEventListener('mouseover', (e) => {
-        const stateName = e.target.getAttribute('data-name');
-        e.target.setAttribute('title', stateName);
-      });
-    });
-  </script>
-<h1 style="color: brown; font-size: 40px;" align="center">Hi My dear devops friends and Mustafa sir/h1>
+<h1 style="color: brown; font-size: 40px;" align="center">Hi My dear devops friends and Mustafa sir</h1>
 	<h1 style="color: brown; font-size: 40px;" align="center">This is my frist ci/cd deployement in devops career</h1>
 <h1 style="color: brown; font-size: 40px;" align="center">I have used master-slave concept here</h1>
 	<h1 style="color: orange; font-size: 40px;" align="center">Integreted nexus also</h1>
 
 </body>
 </html>
-
