@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <center><title>Flag of India</title></center>
+  <title>Flag of India</title>
   <style>
+    /* Centering the flag on the page */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Light background color */
+    }
+
     /* Styling for the India flag */
     .flag {
       width: 300px; /* Width of the flag */
@@ -56,17 +66,11 @@
       height: 100%;
       background-color: #000080;
       transform: rotate(0deg);
-      animation: rotateChakra 1s infinite linear;
-    }
-    @keyframes rotateChakra {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
 
-  <h1>Flag of India</h1>
   <div class="flag">
     <div class="saffron"></div>
     <div class="white">
@@ -74,7 +78,6 @@
     </div>
     <div class="green"></div>
   </div>
-
 <h1 style="color: brown; font-size: 40px;" align="center">Hi My dear devops friends and Mustafa sir</h1>
 	<h1 style="color: brown; font-size: 40px;" align="center">This is my frist ci/cd deployement in devops career</h1>
 <h1 style="color: brown; font-size: 40px;" align="center">I have used master-slave concept here</h1>
@@ -82,3 +85,4 @@
 
 </body>
 </html>
+
