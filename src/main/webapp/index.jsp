@@ -94,7 +94,7 @@
 
   <h1>Hi My dear DevOps friends and Mustafa sir</h1>
   <h1>This is one the CI/CD deployment in my DevOps career</h1>
-  <h1>I have used pipeline jobs concept here</h1>
+  <h1>I have used pipeline jobs concept here.....</h1>
   <h1>Integrated webhooks also here....</h1>
 
 </body>
