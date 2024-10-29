@@ -93,7 +93,7 @@
   </div>
 
   <h1>Hi My dear DevOps friends and Mustafa sir</h1>
-  <h1>This is my first CI/CD deployment in DevOps career</h1>
+  <h1>This is one the CI/CD deployment in DevOps career</h1>
   <h1>I have used master-slave concept here</h1>
   <h1>Integrated Nexus also here....</h1>
 
