@@ -78,7 +78,7 @@
 <h1 style="color: brown; font-size: 40px;" align="center">Hi My dear devops friends and Mustafa sir</h1>
 	<h1 style="color: brown; font-size: 40px;" align="center">This is my frist ci/cd deployement in devops career</h1>
 <h1 style="color: brown; font-size: 40px;" align="center">I have used master-slave concept here</h1>
-	<h1 style="color: orange; font-size: 40px;" align="center">Integreted nexus also here</h1>
+	<h1 style="color: orange; font-size: 40px;" align="center">Integreted nexus also here....</h1>
 
 </body>
 </html>
