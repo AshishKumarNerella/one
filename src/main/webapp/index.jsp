@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flag of India</title>
   <style>
-    /* Centering the flag on the page */
-    body {
+    /* Center content vertically and horizontally */
+    body, html {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f0f0f0; /* Light background color */
+      background-color: #f0f0f0;
+      text-align: center;
     }
 
     /* Styling for the India flag */
     .flag {
-      width: 300px; /* Width of the flag */
-      height: 180px; /* Height of the flag (2:3 ratio) */
+      width: 300px;
+      height: 180px;
       border: 1px solid #000;
       display: flex;
       flex-direction: column;
+      margin-bottom: 20px;
     }
     .saffron {
       background-color: #FF9933;
@@ -67,6 +70,16 @@
       background-color: #000080;
       transform: rotate(0deg);
     }
+
+    /* Styling for the headings */
+    h1 {
+      color: brown;
+      font-size: 40px;
+      margin: 5px;
+    }
+    h1:last-of-type {
+      color: orange;
+    }
   </style>
 </head>
 <body>
@@ -78,10 +91,11 @@
     </div>
     <div class="green"></div>
   </div>
-<h1 style="color: brown; font-size: 40px;" align="center">Hi My dear devops friends and Mustafa sir</h1>
-	<h1 style="color: brown; font-size: 40px;" align="center">This is my frist ci/cd deployement in devops career</h1>
-<h1 style="color: brown; font-size: 40px;" align="center">I have used master-slave concept here</h1>
-	<h1 style="color: orange; font-size: 40px;" align="center">Integreted nexus also here....</h1>
+
+  <h1>Hi My dear DevOps friends and Mustafa sir</h1>
+  <h1>This is my first CI/CD deployment in DevOps career</h1>
+  <h1>I have used master-slave concept here</h1>
+  <h1>Integrated Nexus also here....</h1>
 
 </body>
 </html>
