@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <center><title>Flag of India</title>
+  <center><title>Flag of India</title></center>
   <style>
     /* Styling for the India flag */
     .flag {
@@ -63,7 +63,6 @@
       to { transform: rotate(360deg); }
     }
   </style>
-</center>
 </head>
 <body>
 
