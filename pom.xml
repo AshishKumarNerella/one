@@ -1,101 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flag of India</title>
-  <style>
-    /* Center content vertically and horizontally */
-    body, html {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-      text-align: center;
-    }
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>in.javahome</groupId>
+	<artifactId>myweb</artifactId>
+	<packaging>war</packaging>
+	<version>8.6.8</version>
+	<name>Java Home myweb</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<docker.image.prefix>kammana</docker.image.prefix>
+		<sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
 
-    /* Styling for the India flag */
-    .flag {
-      width: 300px;
-      height: 180px;
-      border: 1px solid #000;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-    }
-    .saffron {
-      background-color: #FF9933;
-      height: 33.33%;
-    }
-    .white {
-      background-color: #FFFFFF;
-      height: 33.33%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .green {
-      background-color: #138808;
-      height: 33.33%;
-    }
-    /* Styling for the Ashoka Chakra */
-    .chakra {
-      width: 50px;
-      height: 50px;
-      border: 2px solid #000080;
-      border-radius: 50%;
-      position: relative;
-    }
-    .chakra::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 4px;
-      height: 4px;
-      background-color: #000080;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .chakra::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 2px;
-      height: 100%;
-      background-color: #000080;
-      transform: rotate(0deg);
-    }
+	</properties>
+	<dependencies>
 
-    /* Styling for the headings */
-    h1 {
-      color: brown;
-      font-size: 40px;
-      margin: 5px;
-    }
-    h1:last-of-type {
-      color: orange;
-    }
-  </style>
-</head>
-<body>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 
-  <div class="flag">
-    <div class="saffron"></div>
-    <div class="white">
-      <div class="chakra"></div>
-    </div>
-    <div class="green"></div>
-  </div>
+	</dependencies>
+	
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://34.208.218.12:8081/repository/sample-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://44.202.251.20:8081/repository/flm-releases/</url>
+		</repository>
+  	</distributionManagement>
+	
+	<pluginRepositories>
+	    <pluginRepository>    
+		<id>maven1</id>
+		<name>Maven.org</name>
+		<url>http://repo1.maven.org/maven2</url>
+	    </pluginRepository>
+	</pluginRepositories>
 
-  <h1>Hi My dear DevOps friends and Mustafa sir</h1>
-  <h1>This is my first CI/CD deployment in DevOps career</h1>
-  <h1>I have used master-slave concept here</h1>
-  <h1>Integrated Nexus also here....</h1>
-
-</body>
-</html>
+	
+</project>
