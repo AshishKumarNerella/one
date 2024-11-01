@@ -96,6 +96,6 @@
   <h1>This is one the CI/CD deployment in my DevOps career</h1>
   <h1>I have used pipeline jobs concept here.....</h1>
   <h1>Integrated webhooks also here....</h1>
-  <h1>This is Mini project with tools: Jenkins,Maven,nexus,sonarqube,tomcat....</h1>
+  <h1>This is Mini Project with tools: Jenkins,Maven,Nexus,SonarQube,Tomcat....</h1>
 </body>
 </html>
