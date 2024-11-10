@@ -94,8 +94,7 @@
 
   <h1>Hi My dear DevOps friends and Mustafa sir</h1>
   <h1>This is one the CI/CD deployment in my DevOps career</h1>
-  <h1>I have used pipeline jobs concept here.....</h1>
-  <h1>Integrated webhooks also here....</h1>
-  <h1>This is Mini Project with tools: Jenkins,Maven,Nexus,SonarQube,Tomcat....</h1>
+  <h1>I have used Mater-slave using Build after other projects build concept here.....</h1>
+  <h1>When i manually build Master-Dev build, then automatically dev to test, test to prod jobs will build automatically and artifacts will be stored in nexus before deploying in prod server.... .....</h1>
 </body>
 </html>
