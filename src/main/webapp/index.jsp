@@ -15,6 +15,7 @@
       margin: 0;
       background-color: #f0f0f0;
       text-align: center;
+      font-family: Arial, sans-serif;
     }
 
     /* Styling for the India flag */
@@ -41,13 +42,15 @@
       background-color: #138808;
       height: 33.33%;
     }
-    /* Styling for the Ashoka Chakra */
+
+    /* Styling and animation for the Ashoka Chakra */
     .chakra {
       width: 50px;
       height: 50px;
       border: 2px solid #000080;
       border-radius: 50%;
       position: relative;
+      animation: rotateChakra 5s linear infinite;
     }
     .chakra::before {
       content: '';
@@ -68,17 +71,30 @@
       width: 2px;
       height: 100%;
       background-color: #000080;
-      transform: rotate(0deg);
+      transform-origin: center;
+    }
+
+    /* Animation for the Chakra rotation */
+    @keyframes rotateChakra {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* Styling for the headings */
     h1 {
-      color: brown;
-      font-size: 40px;
+      font-size: 24px;
       margin: 5px;
+      color: #444;
     }
-    h1:last-of-type {
-      color: orange;
+    h1:first-of-type {
+      color: brown;
+    }
+    h1:nth-of-type(2) {
+      color: darkorange;
     }
   </style>
 </head>
@@ -93,8 +109,9 @@
   </div>
 
   <h1>Hi My dear DevOps friends and Mustafa sir</h1>
-  <h1>This is one the CI/CD deployment in my DevOps career</h1>
-  <h1>I have used Mater-slave using Build after other projects build concept here.....</h1>
-  <h1>When i manually build Master-Dev build, then automatically dev to test, test to prod jobs will build automatically and artifacts will be stored in nexus before deploying in prod server.... .....</h1>
+  <h1>This is one of the CI/CD deployments in my DevOps career</h1>
+  <h1>I have used Master-slave using "Build after other projects build" concept here...</h1>
+  <h1>When I manually build Master-Dev build, then dev-to-test and test-to-prod jobs build automatically. Artifacts are stored in Nexus before deploying in the prod server.</h1>
+
 </body>
 </html>
