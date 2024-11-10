@@ -43,45 +43,27 @@
       height: 33.33%;
     }
 
-    /* Styling and animation for the Ashoka Chakra */
+    /* Styling for the Ashoka Chakra */
     .chakra {
       width: 50px;
       height: 50px;
-      border: 2px solid #000080;
+      border: 3px solid #000080;
       border-radius: 50%;
       position: relative;
-      animation: rotateChakra 5s linear infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    /* Chakra spokes */
     .chakra::before {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 4px;
-      height: 4px;
-      background-color: #000080;
+      width: 85%;
+      height: 85%;
+      border: 10px solid transparent;
+      border-top-color: #000080;
       border-radius: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .chakra::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 2px;
-      height: 100%;
-      background-color: #000080;
-      transform-origin: center;
-    }
-
-    /* Animation for the Chakra rotation */
-    @keyframes rotateChakra {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
     }
 
     /* Styling for the headings */
