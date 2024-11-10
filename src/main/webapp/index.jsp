@@ -54,16 +54,25 @@
       align-items: center;
       justify-content: center;
     }
-
-    /* Chakra spokes */
     .chakra::before {
       content: '';
       position: absolute;
-      width: 85%;
-      height: 85%;
-      border: 10px solid transparent;
-      border-top-color: #000080;
+      width: 10px;
+      height: 10px;
+      background-color: #000080;
       border-radius: 50%;
+      z-index: 1;
+    }
+
+    /* Chakra spokes */
+    .spoke {
+      position: absolute;
+      width: 2px;
+      height: 50%;
+      background-color: #000080;
+      top: 0;
+      left: 50%;
+      transform-origin: bottom;
     }
 
     /* Styling for the headings */
@@ -85,7 +94,33 @@
   <div class="flag">
     <div class="saffron"></div>
     <div class="white">
-      <div class="chakra"></div>
+      <div class="chakra">
+        <!-- Create 24 spokes for the Ashoka Chakra -->
+        <div class="spoke" style="transform: rotate(0deg);"></div>
+        <div class="spoke" style="transform: rotate(15deg);"></div>
+        <div class="spoke" style="transform: rotate(30deg);"></div>
+        <div class="spoke" style="transform: rotate(45deg);"></div>
+        <div class="spoke" style="transform: rotate(60deg);"></div>
+        <div class="spoke" style="transform: rotate(75deg);"></div>
+        <div class="spoke" style="transform: rotate(90deg);"></div>
+        <div class="spoke" style="transform: rotate(105deg);"></div>
+        <div class="spoke" style="transform: rotate(120deg);"></div>
+        <div class="spoke" style="transform: rotate(135deg);"></div>
+        <div class="spoke" style="transform: rotate(150deg);"></div>
+        <div class="spoke" style="transform: rotate(165deg);"></div>
+        <div class="spoke" style="transform: rotate(180deg);"></div>
+        <div class="spoke" style="transform: rotate(195deg);"></div>
+        <div class="spoke" style="transform: rotate(210deg);"></div>
+        <div class="spoke" style="transform: rotate(225deg);"></div>
+        <div class="spoke" style="transform: rotate(240deg);"></div>
+        <div class="spoke" style="transform: rotate(255deg);"></div>
+        <div class="spoke" style="transform: rotate(270deg);"></div>
+        <div class="spoke" style="transform: rotate(285deg);"></div>
+        <div class="spoke" style="transform: rotate(300deg);"></div>
+        <div class="spoke" style="transform: rotate(315deg);"></div>
+        <div class="spoke" style="transform: rotate(330deg);"></div>
+        <div class="spoke" style="transform: rotate(345deg);"></div>
+      </div>
     </div>
     <div class="green"></div>
   </div>
