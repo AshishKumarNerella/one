@@ -125,7 +125,7 @@
     <div class="green"></div>
   </div>
 
-  <h1>Hi My dear DevOps friends and Mustafa sir and Velpula mallikarjuna, pollscm practice, checking cron, made 3 commits, webhooks integrated</h1>
+  <h1>Hi My dear DevOps friends and Mustafa sir and Velpula mallikarjuna, pollscm practice, checking cron, made 3 commits, webhooks integrated, bp</h1>
   <h1>This is one of the CI/CD deployments in my DevOps career</h1>
   <h1>I have used Master-slave using "Build after other projects build" concept here...</h1>
   <h1>When I manually build Master-Dev build, then dev-to-test and test-to-prod jobs build automatically. Artifacts are stored in Nexus before deploying in the prod server.</h1>
